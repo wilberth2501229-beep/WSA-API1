@@ -10,3 +10,12 @@ class PantallaInicio(Resource):
 class HolaMundo(Resource):
     def get(self):
         return{'hola':'mundo'}
+
+class LoginPage(Resource):
+    def get(self):
+        contenido = render_template("loginpage.html")
+        return make_response(contenido)
+class SignUpPage(Resource):
+    def get(self):
+        contenido = render_template("signup.html")
+        return make_response(contenido)
