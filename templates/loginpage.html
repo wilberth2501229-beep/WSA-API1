@@ -28,10 +28,11 @@
       Introduzca sus credenciales
     </p>
 
-    <form class="space-y-4">
+    <form class="space-y-4" action="/login" method="post">
       <div>
         <label class="block text-xs mb-1">USUARIO</label>
         <input
+          name="correo"
           type="text"
           class="w-full bg-black border border-green-500 px-3 py-2 text-green-400 focus:outline-none focus:border-green-300"
           placeholder="user_01"
@@ -41,6 +42,7 @@
       <div>
         <label class="block text-xs mb-1">CONTRASEÑA</label>
         <input
+          name="password"
           type="password"
           class="w-full bg-black border border-green-500 px-3 py-2 text-green-400 focus:outline-none focus:border-green-300"
           placeholder="********"

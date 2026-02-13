@@ -45,7 +45,7 @@
     <!-- ========================= -->
     <!-- FORMULARIO -->
     <!-- ========================= -->
-    <form class="space-y-4">
+    <form class="space-y-4" action="/signup" method ="post">
 
       <!-- ===== Usuario ===== -->
       <div>
@@ -53,6 +53,7 @@
           USUARIO
         </label>
         <input
+          name="user"
           type="text"
           placeholder="user_90s"
           class="w-full bg-black border border-green-500 px-3 py-2 text-green-400
@@ -66,6 +67,7 @@
           EMAIL
         </label>
         <input
+          name="email"
           type="email"
           placeholder="user@mail.com"
           class="w-full bg-black border border-green-500 px-3 py-2 text-green-400
@@ -79,19 +81,7 @@
           CONTRASEÑA
         </label>
         <input
-          type="password"
-          placeholder="********"
-          class="w-full bg-black border border-green-500 px-3 py-2 text-green-400
-                 focus:outline-none focus:border-green-300"
-        />
-      </div>
-
-      <!-- ===== Confirmar contraseña ===== -->
-      <div>
-        <label class="block text-xs mb-1">
-          CONFIRMAR CONTRASEÑA
-        </label>
-        <input
+          name="password"
           type="password"
           placeholder="********"
           class="w-full bg-black border border-green-500 px-3 py-2 text-green-400
