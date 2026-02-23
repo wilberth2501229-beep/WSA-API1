@@ -8,5 +8,5 @@ api= Api(app)
 crear_rutas(api)
 
 
-
+print("Servidor iniciado en http://localhost:8080")
 app.run(port=8080, debug=True)
